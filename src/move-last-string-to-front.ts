@@ -9,14 +9,18 @@ function moveLastStringToFront(stringArr: string[]): string[] {
   const lastIndex = stringArr.length - 1;
   const lastElement = stringArr[lastIndex];
   const resultArr = [lastElement];
+  console.log(resultArr);
 
   // iterate up to, and EXCLUDING, lastIndex
   for (let index = 0; index < lastIndex; index++) {
     const targetElement = stringArr[index];
+    console.log(stringArr[index]);
+    //console.log(targetElement);
     resultArr.push(targetElement);
   }
 
   return resultArr;
 }
+console.log(moveLastStringToFront(["2", "3", "4", "5"]));
 
 export default moveLastStringToFront;

@@ -10,6 +10,7 @@ const swapIndices = (str: string, idxOne: number, idxTwo: number): string => {
   for (let index = 0; index < str.length; index++) {
     if (index === idxOne) {
       resultStr += str[idxTwo];
+      console.log(str[index]);
     } else if (index === idxTwo) {
       resultStr += str[idxOne];
     } else {
@@ -18,5 +19,7 @@ const swapIndices = (str: string, idxOne: number, idxTwo: number): string => {
   }
   return resultStr;
 };
+
+console.log(swapIndices("bukola", 1, 2));
 
 export default swapIndices;
